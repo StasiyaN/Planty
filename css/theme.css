@@ -8,3 +8,27 @@
 h1.wp-block-heading {
     text-transform: uppercase;
 }
+
+
+
+
+
+
+
+
+
+
+.order-box {
+    display: flex;
+  }
+  
+  
+  .column {
+    flex: 1; /* Equal width for both columns */
+    padding: 0 20px; /* Add padding for spacing */
+  }
+  
+  
+  .separator {
+
+  }
