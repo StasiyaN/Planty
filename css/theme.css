@@ -5,11 +5,34 @@
     height: 19px;
 }
 
-h1.wp-block-heading {
-    text-transform: uppercase;
+/* HOME PAGE TYPO */
+
+.home-page {
+    text-align: center;
 }
 
 
+h1.page-title {
+    font-size: 38pt;
+    font-weight: 800;
+}
+
+h1, h2, h3.home-page {
+    text-transform: uppercase;
+}
+
+h1.home-page, h2.home-page, h3.home-page, p.home-page {
+    color: #3B8E46;
+}
+
+p.article-body {
+    color: black;
+}
+
+p.title {
+font-size: 30pt;
+font-weight: bold;
+}
 
 
 
