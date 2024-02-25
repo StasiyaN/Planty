@@ -16,8 +16,22 @@
     height: 19px;
 }
 
+.home-top {
+    border-bottom-right-radius:400px 50px !important;
+    border-bottom-left-radius:400px 50px !important;
+    background-color: #EDE2DA !important;
+    box-shadow: 0px 10px 0px 1px #e0d8d2;
+}
+
 .about-us-bottom {
-    background-color: #ECE2DA ;
+    background-color: #EDE2DA;
+}
+
+.about-us-block {
+    border-bottom-right-radius:400px 50px ;
+    border-bottom-left-radius:400px 50px ;
+    background-color: #EDE2DA;
+    box-shadow: 0px 10px 0px 1px #e0d8d2;
 }
 
 
