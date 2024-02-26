@@ -20,7 +20,7 @@
     border-bottom-right-radius:400px 50px !important;
     border-bottom-left-radius:400px 50px !important;
     background-color: #EDE2DA !important;
-    box-shadow: 0px 10px 0px 1px #e0d8d2;
+    box-shadow: 0px 10px 0px 1px #e0d8d2; 
 }
 
 .about-us-bottom {
@@ -31,7 +31,7 @@
     border-bottom-right-radius:400px 50px ;
     border-bottom-left-radius:400px 50px ;
     background-color: #EDE2DA;
-    box-shadow: 0px 10px 0px 1px #e0d8d2;
+    /* box-shadow: 0px 10px 0px 1px #e0d8d2; */
 }
 
 
@@ -41,13 +41,40 @@ form input[type="submit"], form button[type="submit"] {
     text-align: center; 
 }
   
+.about-us {
+    position: relative;
+}
 
+.fleur-img {
+    position: absolute;
+    top: 210px;
+    left: 300px;
+}
 
+.equipe-block {
+    position: relative;
+}
 
+.fleur-equipe {
+    position: absolute;
+    right: 60px;
+    bottom: -60px;
+}
 
+.contact-us-block {
+    position: relative;
+}
 
+.fleur-contact {
+    position: absolute;
+    top: 460px;
+    left: 612px;
+    z-index: 1;
+}
 
-
+.contact-us {
+    z-index: 2;
+}
 
 
 
