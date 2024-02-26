@@ -65,20 +65,28 @@ form input[type="submit"], form button[type="submit"] {
     bottom: -60px;
 }
 
-.contact-us-block {
+
+.contact-us label,
+.contact-us input,
+.contact-us textarea,
+.contact-us [type="submit"] {
     position: relative;
-}
-
-.fleur-contact {
-    position: absolute;
-    top: 472px;
-    left: 435px;
-    z-index: 1;
-}
-
-.contact-us {
     z-index: 2;
 }
+
+
+.form-fleur {
+    position: absolute;
+    z-index: 1; 
+    top: 345px; 
+    left: -90px; 
+    height: auto; 
+}
+      
+      
+
+
+
 
 
 
@@ -106,7 +114,7 @@ form input[type="submit"], form button[type="submit"] {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1382px) {
+@media (max-width: 1380px) {
     .fleur-img {
         display: none;
     }
@@ -115,7 +123,5 @@ form input[type="submit"], form button[type="submit"] {
         display: none;
     }
 
-    .fleur-contact {
-        display: none;
-    }
+
 }
