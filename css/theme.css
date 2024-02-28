@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 #masthead {
     width: auto;
@@ -84,7 +85,35 @@ form input[type="submit"], form button[type="submit"] {
 }
       
       
+.separator-votre-commande {
+    border: 1px solid #FFFFFF;
+    width: 860px;
+}
 
+
+
+.gouts-commande {
+    width: 850px;
+}
+
+/* Centering the form */
+.wpcf7 {
+    text-align: center; /* Center align the content */
+}
+
+
+.wpcf7 .quantity-input.wpcf7-form-control:not([type=submit]), .wpcf7 quantity-textarea.wpcf7-form-control {
+    padding: 10px;
+    width: 39px;
+    height: 56px;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    align-self: center;
+    border-radius: 0;
+    
+
+}
 
 
 
@@ -108,9 +137,9 @@ form input[type="submit"], form button[type="submit"] {
   }
   
   
-  .separator {
+  /* .separator {
 
-}
+} */
 
 /* MEDIA QUERIES */
 
