@@ -7,6 +7,16 @@
     min-height: 80px;
 }
 
+.admin-link {
+    font-size: 16px;
+    margin-left: 41px;
+    margin-right: 41px;
+}
+
+.ast-custom-button {
+    width: 236px;
+    text-align: center;
+}
 
 /* FOOTER */
 

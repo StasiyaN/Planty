@@ -19,7 +19,7 @@ function add_admin_link_to_primary_menu( $items, $args ) {
     // Check if user is logged in and if the current menu is the Primary Menu
     if ( is_user_logged_in() && 'primary' === $args->theme_location ) {
         // Define the new menu item - an Admin link
-        $admin_link = '<li class="menu-item menu-link"><a href="' . admin_url() . '">Admin</a></li>';
+        $admin_link = '<li class="menu-item admin-link"><a href="' . admin_url() . '">Admin</a></li>';
         
         // Append the new item to the existing menu items
         $items .= $admin_link;
