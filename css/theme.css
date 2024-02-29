@@ -4,7 +4,7 @@
 
 /* HEADER  */
 .site-header-section {
-    min-height: 80px;
+    height: 80px;
 }
 
 .admin-link {
@@ -13,14 +13,18 @@
     margin-right: 41px;
 }
 
-.ast-custom-button {
+.ast-header-button-1[data-section*="section-hb-button-"] .ast-builder-button-wrap .ast-custom-button {
+    padding-top: 15px;
     width: 236px;
+    height: 80px;
     text-align: center;
 }
 
+
+
 /* FOOTER */
 
-.site-footer-section-1 {
+.site-above-footer-wrap[data-section="section-above-footer-builder"].ast-footer-row-inline .site-footer-section {
     height: 60px;
 }
 
