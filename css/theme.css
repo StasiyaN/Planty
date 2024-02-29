@@ -96,9 +96,9 @@ form input[type="submit"], form button[type="submit"] {
     width: 850px;
 }
 
-/* Centering the form */
+
 .wpcf7 {
-    text-align: center; /* Center align the content */
+    text-align: center;
 }
 
 
@@ -111,35 +111,65 @@ form input[type="submit"], form button[type="submit"] {
     text-align: center;
     align-self: center;
     border-radius: 0;
-    
+}
 
+/* COMMANDE FORM 7 */
+
+.order-box {
+    display: flex;
+}
+  
+  
+.column {
+    flex: 1; 
+    padding: 0 20px; 
+    text-align: left;
+}
+
+p, .order-title.p {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+p, .entry-content p {
+    margin-bottom: 45px;
 }
 
 
 
+.wpcf7 .order-label, legend {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 33px;
+    margin-top: 0;
+}
 
+.wpcf7 .order.wpcf7-form-control:not([type=submit]), .wpcf7 order-textarea.wpcf7-form-control {
+    width: 383px;
+    height: 71px;
+    border-radius: 7px;
 
-
-
-
-
-
-
-
-.order-box {
-    display: flex;
-  }
+}
   
-  
-  .column {
-    flex: 1; 
-    padding: 0 20px; 
-  }
-  
-  
-  /* .separator {
+.separator {
+    height: 447px;
+    border: 1px solid #FFFFFF; 
+    margin-top: 5px;
+    margin-left: 40px;
+    margin-right: 40px; 
+}
 
-} */
+.order-btn {
+    width: 198px;
+    height: 55px;
+}
+
+form input[type="submit"], form .order-btn[type="submit"] {
+    border-radius: 5px;
+}
+
 
 /* MEDIA QUERIES */
 
