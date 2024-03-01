@@ -12,10 +12,13 @@ function theme_enqueue_styles()
 
 /*  ADMIN */
 
+register_nav_menus(array(
+    'primary' => __('Primary Menu', 'astrachild'),
+    'mobile' => __('Off-Canvas Menu', 'astrachild'),
+));
 
 
-
-function add_admin_link_to_primary_menu( $items, $args ) {
+function add_admin_link_to_primary_menu ( $items, $args ) {
     // Check if user is logged in and if the current menu is the Primary Menu
     if ( is_user_logged_in() && 'primary' === $args->theme_location ) {
         // Define the new menu item - an Admin link
@@ -28,3 +31,15 @@ function add_admin_link_to_primary_menu( $items, $args ) {
     return $items;
 }
 add_filter( 'wp_nav_menu_items', 'add_admin_link_to_primary_menu', 100, 2 );
+
+function add_admin_link_to_mobile_menu ( $items, $args ) {
+    if ( is_user_logged_in() && 'mobile'=== $args->theme_location ) {
+        $admin_link = '<li class="menu-item admin-link"><a href="'. admin_url() . '"admin</a></li';
+        $items .= $admin_link;
+    }
+
+    return $items;
+}
+
+add_filter( 'wp_nav_menu_items', 'add_admin_link_to_mobile_menu', 100, 2 );
+

@@ -44,7 +44,7 @@
 .home-top {
     border-bottom-right-radius:400px 50px !important;
     border-bottom-left-radius:400px 50px !important;
-    background-color: #EDE2DA !important;
+    background-color: #EDE2DA;
     box-shadow: 0px 10px 0px 1px #e0d8d2; 
 }
 
@@ -58,7 +58,6 @@
     border-bottom-right-radius:400px 50px ;
     border-bottom-left-radius:400px 50px ;
     background-color: #EDE2DA;
-    /* box-shadow: 0px 10px 0px 1px #e0d8d2; */
 }
 
 /* NOUS CONTACTER FORM 7 */
@@ -152,6 +151,10 @@ form input[type="submit"], form button[type="submit"] {
     width: 850px;
 }
 
+h2, .votre-commande h2 {
+    align-self: flex-start;
+}
+
 .wpcf7 {
     text-align: center;
 }
@@ -239,4 +242,54 @@ form input[type="submit"], form .order-btn[type="submit"] {
     }
 
 
+}
+
+@media (max-width: 600px) {
+    /* HOME PAGE */
+    h1 {
+        font-size: 25px !important;
+        padding-top: 0 !important;
+    }
+
+    .gallerie-gout-home {
+        display: flex;
+        flex-direction: column !important;
+        width: 400px;
+        height: 600px;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        align-content: center !important;
+    }
+
+    p, .gout-text p {
+        display: none !important;
+    }
+
+    /* .avis-clients {
+        display: flex;
+    } */
+
+    .fatiha {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    /* NOUS RENCONTRER */
+
+    .nous-contacter-block {
+        width: 500px !important;
+        height: 900px !important;
+    }
+
+    .contact-us {
+        width: 400px !important;
+        height: auto !important;
+    }
+}
+
+@media (max-width: 420px) {
+    h1 {
+        font-size: 16px !important;
+        margin-top: 20px !important;
+    }
 }
