@@ -13,6 +13,17 @@
     margin-right: 41px;
 }
 
+.mobile-admin-link a {
+    color: #3B8E46;
+    padding-left: 20px;
+}
+
+.mobile-admin-link a:hover {
+    color: black;
+    background-color: #E0B9B4;
+}
+
+
 .ast-header-button-1[data-section*="section-hb-button-"] .ast-builder-button-wrap .ast-custom-button {
     padding-top: 15px;
     width: 236px;
@@ -39,8 +50,7 @@
 }
 
 
-/* PAGE D ACCUEIL
- */
+/* PAGE D ACCUEIL */
 .home-top {
     border-bottom-right-radius:400px 50px !important;
     border-bottom-left-radius:400px 50px !important;
@@ -88,7 +98,7 @@ form input[type="submit"], form button[type="submit"] {
 .fleur-equipe {
     position: absolute;
     right: 30px;
-    bottom: -60px;
+    bottom: -48px;
 }
 
 
