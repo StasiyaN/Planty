@@ -12,34 +12,30 @@ function theme_enqueue_styles()
 
 /*  ADMIN */
 
-register_nav_menus(array(
-    'primary' => __('Primary Menu', 'astrachild'),
-    'mobile' => __('Off-Canvas Menu', 'astrachild'),
-));
-
+add_filter( 'wp_nav_menu_items', 'add_admin_link_to_primary_menu', 10, 2 );
 
 function add_admin_link_to_primary_menu ( $items, $args ) {
-    // Check if user is logged in and if the current menu is the Primary Menu
-    if ( is_user_logged_in() && 'primary' === $args->theme_location ) {
-        // Define the new menu item - an Admin link
-        $admin_link = '<li class="menu-item admin-link"><a href="' . admin_url() . '">Admin</a></li>';
+
+if ( is_user_logged_in() && 'primary' == $args->theme_location ) {
+$admin_link = '<li class="menu-item admin-link"><a href="' . admin_url() . '">Admin</a></li>';
         
-        // Append the new item to the existing menu items
-        $items .= $admin_link;
-    }
+$items .= $admin_link;
+}
     
-    return $items;
-}
-add_filter( 'wp_nav_menu_items', 'add_admin_link_to_primary_menu', 100, 2 );
-
-function add_admin_link_to_mobile_menu ( $items, $args ) {
-    if ( is_user_logged_in() && 'mobile'=== $args->theme_location ) {
-        $admin_link = '<li class="menu-item admin-link"><a href="'. admin_url() . '"admin</a></li';
-        $items .= $admin_link;
-    }
-
-    return $items;
+return $items;
 }
 
-add_filter( 'wp_nav_menu_items', 'add_admin_link_to_mobile_menu', 100, 2 );
+add_filter( 'wp_nav_menu_mobile-menu_items', 'prefix_add_admin_menu_item', 10, 2 );
+
+function prefix_add_admin_menu_item( $items, $args ) {
+  if ( is_user_logged_in() ) {
+  
+    $start_menu_item = '<li class="menu-item mobile-admin-link"><a href="' . admin_url() . '">admin</a></li>';
+
+    $new_items = $start_menu_item . $items;
+  }
+
+  return $new_items;
+}
+
 
