@@ -108,6 +108,7 @@ form input[type="submit"], form button[type="submit"] {
 .contact-us [type="submit"] {
     position: relative;
     z-index: 2;
+    margin-top: 13px;
 }
 
 
@@ -128,6 +129,10 @@ form input[type="submit"], form button[type="submit"] {
 
 .wpcf7 .customer, legend {
     font-size: 20px;
+}
+
+#wpcf7-f233-p199-o5.wpcf7 .wpcf7-form-control-wrap {
+    margin-top: 13px;
 }
 
 .wpcf7 .nous-contacter {
@@ -206,9 +211,14 @@ p, .entry-content p {
     color: #FFFFFF;
     font-size: 20px;
     font-weight: 400;
-    line-height: 33px;
-    margin-top: 0;
+    /* line-height: 33px; */
+    margin-bottom: 13px;
 }
+
+
+.order-label label {
+    margin-top: 13px;
+} 
 
 .wpcf7 .order.wpcf7-form-control:not([type=submit]), .wpcf7 order-textarea.wpcf7-form-control {
     width: 383px;
