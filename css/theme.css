@@ -115,7 +115,7 @@ form input[type="submit"], form button[type="submit"] {
 .form-fleur {
     position: absolute;
     z-index: 1; 
-    top: 417px; 
+    top: 450px; 
     left: -85px; 
     height: auto; 
 }
@@ -247,12 +247,9 @@ form input[type="submit"], form .order-btn[type="submit"] {
 
 
 
-
-
-
 /* MEDIA QUERIES */
 
-@media (max-width: 1380px) {
+@media (max-width: 1024px) {
     .fleur-img {
         display: none;
     }
@@ -261,16 +258,41 @@ form input[type="submit"], form .order-btn[type="submit"] {
         display: none;
     }
 
-
-}
-
-@media (max-width: 600px) {
-    /* HOME PAGE */
-    h1 {
-        font-size: 25px !important;
-        padding-top: 0 !important;
+    .page-title {
+        font-size: 30px !important;
+        padding-top: 30px !important;
+        padding-bottom: 45px !important;
     }
 
+    .wp-block-image img {
+        max-width: 80%;
+    }
+
+
+    #wpcf7-f523-p199-o1.wpcf7 .wpcf7-form-control-wrap,
+    #wpcf7-f523-p199-o2.wpcf7 .wpcf7-form-control-wrap,
+    #wpcf7-f523-p199-o3.wpcf7 .wpcf7-form-control-wrap,  
+    #wpcf7-f523-p199-o4.wpcf7 .wpcf7-form-control-wrap{
+        width: 80%;
+    }
+
+    .votre-commande {
+        font-size: 20px !important;
+        padding: 0 !important;
+    }
+
+    .order-title {
+        font-size: 25px !important;
+    }
+}
+
+
+
+
+
+
+    
+@media (max-width: 600px) {
     .gallerie-gout-home {
         display: flex;
         flex-direction: column !important;
@@ -280,36 +302,7 @@ form input[type="submit"], form .order-btn[type="submit"] {
         padding-left: 0 !important;
         align-content: center !important;
     }
-
-    p, .gout-text p {
-        display: none !important;
-    }
-
-    /* .avis-clients {
-        display: flex;
-    } */
-
-    .fatiha {
-        display: flex;
-        flex-direction: column !important;
-    }
-
-    /* NOUS RENCONTRER */
-
-    .nous-contacter-block {
-        width: 500px !important;
-        height: 900px !important;
-    }
-
-    .contact-us {
-        width: 400px !important;
-        height: auto !important;
-    }
 }
 
-@media (max-width: 420px) {
-    h1 {
-        font-size: 16px !important;
-        margin-top: 20px !important;
-    }
-}
+
+
