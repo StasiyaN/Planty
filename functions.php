@@ -27,7 +27,7 @@ return $items;
 
 add_filter( 'wp_nav_menu_mobile-menu_items', 'prefix_add_admin_menu_item', 10, 2 );
 
-function prefix_add_admin_menu_item( $items, $args ) {
+function prefix_add_admin_menu_item( $items ) {
   if ( is_user_logged_in() ) {
   
     $start_menu_item = '<li class="menu-item mobile-admin-link"><a href="' . admin_url() . '">admin</a></li>';

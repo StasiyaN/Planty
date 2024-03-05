@@ -187,10 +187,14 @@ h2, .votre-commande h2 {
 
 /* COMMANDE FORM 7 */
 
-.order-box {
+
+
+ .order-box {
     display: flex;
-}
-  
+    flex-direction: row;
+
+} 
+   
 .column {
     flex: 1; 
     padding: 0 20px; 
@@ -249,7 +253,10 @@ form input[type="submit"], form .order-btn[type="submit"] {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1024px) {
+@media all and (max-width: 1024px) {
+  
+
+
     .fleur-img {
         display: none;
     }
@@ -288,11 +295,84 @@ form input[type="submit"], form .order-btn[type="submit"] {
 
 
 
+@media all and (max-width: 921px) {
+
+    .ast-page-builder-template .entry-content[ast-blocks-layout] > * > *, .entry-content[ast-blocks-layout] {
+        margin-left: 0;
+        margin-right: 0;
+    }
+} 
 
 
 
+
+@media all and (max-width: 781px) {
+     
+    .avis-clients {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+
+
+    .gallerie-gout-home {
+        padding-right: 130px !important;
+        padding-left: 130px !important;
+    }
+   
+
+
+     .wp-block-media-text is-stacked-on-mobile {
+        font-size: 13px !important;
+    } 
+
+
+
+    .wpcf7 .wpcf7-form-control-wrap {
+        width: 100%;
+        display: block;
+    }
+
+
+    .order-box {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .separator {
+        display: none !important;
+    }
+  
+    .plantes-title {
+        font-size: 20px !important;
+    }
     
-@media (max-width: 600px) {
+   .plantes-text {
+    font-size: 15px !important;
+   }
+     
+   .les-gouts-title {
+    font-size: 20px !important;
+   }
+
+   .les-gouts-text {
+    font-size: 15px !important;
+   }
+
+
+
+    .avis-clients-title {
+        font-size: 20px !important;
+        margin-top: 60px !important;
+    } 
+
+}
+
+@media all and (max-width: 600px) {
+
+    .page-title {
+        font-size: 25px !important;
+    }
     .gallerie-gout-home {
         display: flex;
         flex-direction: column !important;
@@ -302,7 +382,56 @@ form input[type="submit"], form .order-btn[type="submit"] {
         padding-left: 0 !important;
         align-content: center !important;
     }
+
+
+
+
+
+    /* NOUS RENCONTRER */
+    .contact-us-text {
+        font-size: 15px !important;
+    }
+
+    .team {
+        margin-top: 66px !important;
+    }
+
+    .contact-us-heading {
+        align-self: center !important;
+    }
+      
+    /* PAGE COMMANDE */
+
+
+
+
 }
 
+
+
+
+
+
+/* @media all and (max-width: 544px) {
+
+ 
+    
+} */
+
+
+
+
+
+/* @media (max-width: 600px) {
+    .gallerie-gout-home {
+        display: flex;
+        flex-direction: column !important;
+        width: 400px;
+        height: 600px;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        align-content: center !important;
+    }
+} */
 
 
