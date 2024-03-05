@@ -327,12 +327,38 @@ form input[type="submit"], form .order-btn[type="submit"] {
     } 
 
 
+    /* COMMANDE */
+
+    .votre-commande {
+        align-self: center !important;
+    }
+  
+
+    .gouts-commande {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    
+    .order-quantity-block {
+        width: 50% !important;
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .wp-block-image img {
+        max-width: 70%;
+    }
+
+    
+
 
     .wpcf7 .wpcf7-form-control-wrap {
         width: 100%;
         display: block;
     }
-
 
     .order-box {
         display: flex;
@@ -348,20 +374,18 @@ form input[type="submit"], form .order-btn[type="submit"] {
     }
     
    .plantes-text {
-    font-size: 15px !important;
+        font-size: 15px !important;
    }
      
    .les-gouts-title {
-    font-size: 20px !important;
+        font-size: 20px !important;
    }
 
    .les-gouts-text {
-    font-size: 15px !important;
+        font-size: 15px !important;
    }
 
-
-
-    .avis-clients-title {
+   .avis-clients-title {
         font-size: 20px !important;
         margin-top: 60px !important;
     } 
@@ -369,6 +393,8 @@ form input[type="submit"], form .order-btn[type="submit"] {
 }
 
 @media all and (max-width: 600px) {
+
+    /* HOME PAGE */
 
     .page-title {
         font-size: 25px !important;
@@ -382,9 +408,6 @@ form input[type="submit"], form .order-btn[type="submit"] {
         padding-left: 0 !important;
         align-content: center !important;
     }
-
-
-
 
 
     /* NOUS RENCONTRER */
@@ -401,6 +424,25 @@ form input[type="submit"], form .order-btn[type="submit"] {
     }
       
     /* PAGE COMMANDE */
+
+    .votre-commande {
+        align-self: center !important;
+    }
+  
+
+
+    .gouts-commande {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .order-quantity-block {
+        width: 40% !important;
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
 
 
 
