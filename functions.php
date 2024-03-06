@@ -12,30 +12,18 @@ function theme_enqueue_styles()
 
 /*  ADMIN */
 
-add_filter( 'wp_nav_menu_items', 'add_admin_link_to_primary_menu', 10, 2 );
 
-function add_admin_link_to_primary_menu ( $items, $args ) {
+add_filter( 'wp_nav_menu_items', 'add_admin_link_to_menus', 10, 2 );
 
-if ( is_user_logged_in() && 'primary' == $args->theme_location ) {
-$admin_link = '<li class="menu-item admin-link"><a href="' . admin_url() . '">Admin</a></li>';
-        
-$items .= $admin_link;
-}
-    
-return $items;
+function add_admin_link_to_menus( $items, $args ) {
+    if ( is_user_logged_in() && ( 'primary' == $args->theme_location || 'off_canvas' == $args->theme_location ) ) {
+        $admin_link = '<li class="menu-item admin-link"><a href="' . admin_url() . '">Admin</a></li>';
+        $items .= $admin_link;
+    }
+    return $items;
 }
 
-add_filter( 'wp_nav_menu_mobile-menu_items', 'prefix_add_admin_menu_item', 10, 2 );
 
-function prefix_add_admin_menu_item( $items ) {
-  if ( is_user_logged_in() ) {
-  
-    $start_menu_item = '<li class="menu-item mobile-admin-link"><a href="' . admin_url() . '">admin</a></li>';
 
-    $new_items = $start_menu_item . $items;
-  }
-
-  return $new_items;
-}
 
 
