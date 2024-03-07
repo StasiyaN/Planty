@@ -58,6 +58,11 @@
     box-shadow: 0px 10px 0px 1px #e0d8d2; 
 }
 
+.gallerie-gout-home {
+    width: 60%;
+} 
+
+
 /* PAGE NOUS RENCONTRER */
 
 .about-us-bottom {
@@ -316,8 +321,12 @@ form input[type="submit"], form .order-btn[type="submit"] {
 
 
     .gallerie-gout-home {
-        padding-right: 130px !important;
-        padding-left: 130px !important;
+        display: flex;
+        flex-direction: column !important;
+        width: 400px;
+        height: 600px;
+        align-content: center !important;
+       
     }
    
 
@@ -399,15 +408,6 @@ form input[type="submit"], form .order-btn[type="submit"] {
     .page-title {
         font-size: 25px !important;
     }
-    .gallerie-gout-home {
-        display: flex;
-        flex-direction: column !important;
-        width: 400px;
-        height: 600px;
-        padding-right: 0 !important;
-        padding-left: 0 !important;
-        align-content: center !important;
-    }
 
 
     /* NOUS RENCONTRER */
@@ -444,12 +444,31 @@ form input[type="submit"], form .order-btn[type="submit"] {
         align-items: center !important;
     }
 
+}
+
+@media all and (max-width: 454px) {
+
+    /* HOME PAGE */
+    .page-title,
+    .les-gouts-title {
+        font-size: 14px !important;
+        align-self: center !important;
+    }
+
+    .gallerie-gout-home {
+        padding-right: 40px !important;
+        align-content: center !important;
+        margin-left: auto !important;
+        
+    }
+
+
+
+
 
 
 
 }
-
-
 
 
 
