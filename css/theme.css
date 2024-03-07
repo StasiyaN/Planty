@@ -106,6 +106,10 @@ form input[type="submit"], form button[type="submit"] {
     bottom: -48px;
 }
 
+.contact-us-heading {
+    align-self: center !important;
+}
+
 
 .contact-us label,
 .contact-us input,
@@ -194,7 +198,7 @@ h2, .votre-commande h2 {
 
 
 
- .order-box {
+.order-box {
     display: flex;
     flex-direction: row;
 
@@ -457,9 +461,23 @@ form input[type="submit"], form .order-btn[type="submit"] {
     }
 
  
+    /* CONTACT US PAGE */
 
-        
-} 
+    .contact-us-heading {
+        font-size: 20px !important;
+        align-self: center !important;
+    }
+
+    .form-fleur {
+        display: none;
+    }
+
+    .wpcf7-form-control {
+        width: 100% !important;
+        box-sizing: border-box;
+
+    }
+}
 
 
 
