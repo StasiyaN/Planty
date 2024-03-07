@@ -323,15 +323,16 @@ form input[type="submit"], form .order-btn[type="submit"] {
     .gallerie-gout-home {
         display: flex;
         flex-direction: column !important;
-        width: 400px;
-        height: 600px;
         align-content: center !important;
-       
+        justify-content: center !important;
+    }
+
+    .gallerie-gout-home .gout-img {
+        width: 100% !important;
+        box-sizing: border-box !important;
     }
    
-
-
-     .wp-block-media-text is-stacked-on-mobile {
+    .wp-block-media-text is-stacked-on-mobile {
         font-size: 13px !important;
     } 
 
@@ -446,7 +447,7 @@ form input[type="submit"], form .order-btn[type="submit"] {
 
 }
 
-@media all and (max-width: 454px) {
+@media all and (max-width: 454px) and (min-width: 320px) {
 
     /* HOME PAGE */
     .page-title,
@@ -455,44 +456,16 @@ form input[type="submit"], form .order-btn[type="submit"] {
         align-self: center !important;
     }
 
-    .gallerie-gout-home {
-        padding-right: 40px !important;
-        align-content: center !important;
-        margin-left: auto !important;
-        
-    }
-
-
-
-
-
-
-
-}
-
-
-
-
-/* @media all and (max-width: 544px) {
-
  
-    
-} */
+
+        
+} 
 
 
 
 
 
-/* @media (max-width: 600px) {
-    .gallerie-gout-home {
-        display: flex;
-        flex-direction: column !important;
-        width: 400px;
-        height: 600px;
-        padding-right: 0 !important;
-        padding-left: 0 !important;
-        align-content: center !important;
-    }
-} */
+
+
 
 
