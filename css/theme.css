@@ -62,6 +62,16 @@
     width: 60%;
 } 
 
+.client-title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.client-avis-text  {
+    font-size: 16px;
+    font-weight: 400;
+}
+
 
 /* PAGE NOUS RENCONTRER */
 
@@ -73,44 +83,43 @@
     border-bottom-right-radius:400px 50px ;
     border-bottom-left-radius:400px 50px ;
     background-color: #EDE2DA;
-}
-
-/* NOUS CONTACTER FORM 7 */
-
-form input[type="submit"], form button[type="submit"] {
-    display: block;
-    margin: 0 auto; 
-    text-align: center; 
-}
-  
-.about-us {
     position: relative;
+    display: block;
+    text-align: center;
 }
+
 
 .fleur-img {
     position: absolute;
-    top: 215px;
-    left: 160px;
-    width: auto;
-    height: auto;
-    max-width: 100%;
-} 
+    left: 160px; 
+    top: 140px; 
+}
 
-.equipe-block {
+
+/* EQUIPE */
+
+ .equipe-block {
     position: relative;
 }
+
 
 .fleur-equipe {
     position: absolute;
     right: 30px;
     bottom: -48px;
-}
+   
+} 
+
+
+/* CONTACT */
 
 .contact-us-heading {
     align-self: center !important;
 }
 
 
+
+/* FLEUR DANS LA WPCF7 */
 .contact-us label,
 .contact-us input,
 .contact-us textarea,
@@ -128,7 +137,6 @@ form input[type="submit"], form button[type="submit"] {
     left: -85px; 
     height: auto; 
 }
-
 
 /* NOUS CONTACTER FORM 7 */
 
@@ -163,6 +171,11 @@ form input[type="submit"], form button[type="submit"] {
     font-size: 15px;
 }
 
+form input[type="submit"], form button[type="submit"] {
+    display: block;
+    margin: 0 auto; 
+    text-align: center; 
+}
 
 /* PAGE COMMANDER */
       
@@ -224,7 +237,6 @@ p, .entry-content p {
     color: #FFFFFF;
     font-size: 20px;
     font-weight: 400;
-    /* line-height: 33px; */
     margin-bottom: 13px;
 }
 
@@ -259,22 +271,21 @@ form input[type="submit"], form .order-btn[type="submit"] {
 
 
 
-
 /* MEDIA QUERIES */
 
-@media all and (max-width: 1024px) {
-  
-
-
+ @media all and (max-width: 1330px) {
     .fleur-img {
-        display: none;
+        display: none !important;
     }
 
     .fleur-equipe {
-        display: none;
+        display: none !important;
     }
+} 
 
-    .page-title {
+@media all and (max-width: 1024px) {
+
+     .page-title {
         font-size: 30px !important;
         padding-top: 30px !important;
         padding-bottom: 45px !important;
@@ -414,6 +425,7 @@ form input[type="submit"], form .order-btn[type="submit"] {
         font-size: 25px !important;
     }
 
+  
 
     /* NOUS RENCONTRER */
     .contact-us-text {
@@ -451,6 +463,7 @@ form input[type="submit"], form .order-btn[type="submit"] {
 
 }
 
+
 @media all and (max-width: 454px) and (min-width: 320px) {
 
     /* HOME PAGE */
@@ -460,6 +473,7 @@ form input[type="submit"], form .order-btn[type="submit"] {
         align-self: center !important;
     }
 
+ 
  
     /* CONTACT US PAGE */
 
