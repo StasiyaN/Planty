@@ -315,13 +315,34 @@ form input[type="submit"], form .order-btn[type="submit"] {
 
 
 
-@media all and (max-width: 921px) {
+ @media all and (max-width: 921px) {
+
+    .site-above-footer-wrap[data-section="section-above-footer-builder"].ast-footer-row-inline .site-footer-section {
+        height: 20px;
+    }
+
+  
+    .wpcf7 .wpcf7-form-control-wrap {
+        width: 100%;
+        display: block;
+    }
+
+    .order-box {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .separator {
+        display: none !important;
+    }
+  
+
 
     .ast-page-builder-template .entry-content[ast-blocks-layout] > * > *, .entry-content[ast-blocks-layout] {
         margin-left: 0;
         margin-right: 0;
-    }
-} 
+    } 
+}  
 
 
 
@@ -469,10 +490,15 @@ form input[type="submit"], form .order-btn[type="submit"] {
     /* HOME PAGE */
     .page-title,
     .les-gouts-title {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
         font-size: 14px !important;
-        align-self: center !important;
+        align-items: center !important;
     }
 
+    .home-block {
+        align-items: center !important;
+    }
  
  
     /* CONTACT US PAGE */
@@ -491,6 +517,7 @@ form input[type="submit"], form .order-btn[type="submit"] {
         box-sizing: border-box;
 
     }
+
 }
 
 
