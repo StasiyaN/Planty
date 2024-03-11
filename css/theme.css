@@ -311,11 +311,23 @@ form input[type="submit"], form .order-btn[type="submit"] {
     .order-title {
         font-size: 25px !important;
     }
+
+    body .is-layout-flex {
+        flex-direction: column !important;
+        justify-content: flex-start;
+        align-items: center !important;
+    }
+
+    wp-block-media-text__content {
+        width: fit-content;
+    }
 }
 
 
 
  @media all and (max-width: 921px) {
+
+   
 
     .site-above-footer-wrap[data-section="section-above-footer-builder"].ast-footer-row-inline .site-footer-section {
         height: 20px;
