@@ -13,15 +13,18 @@ function theme_enqueue_styles()
 /*  ADMIN */
 
 
-add_filter( 'wp_nav_menu_items', 'add_admin_link_to_menus', 10, 2 );
+add_filter('wp_nav_menu_items', 'add_admin_link_to_header_menu', 10, 2);
 
-function add_admin_link_to_menus( $items, $args ) {
-    if ( is_user_logged_in() && ( 'primary' == $args->theme_location || 'off_canvas' == $args->theme_location ) ) {
+function add_admin_link_to_header_menu ($items, $args) {
+    if (is_user_logged_in() && ('primary' == $args->theme_location )) {
         $admin_link = '<li class="menu-item admin-link"><a href="' . admin_url() . '">Admin</a></li>';
         $items .= $admin_link;
     }
     return $items;
 }
+
+
+add_filter('wp_nav_menu_items', 'add_admin_link_to_mobile_menu', 10, 2);
 
 
 
